@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Do the Thing</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Downloads.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Fullscreen</div>
-      </div>
+<html>
+<head>
+    <title>PotatoesBasket Games</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet"/>
+    <link href="images/icon.ico" rel="shortcut icon">
+</head>
+<body>
+<div class="container">
+    <h1>Do the Thing!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Play Demo</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <img src="images/game/start.png" alt="start!">
+        <img src="images/game/golf.jpg" alt="putt!">
+        <img src="images/game/car.png" alt="avoid!">
+        <p>Do the Thing is a WarioWare-inspired game that was created for AIE's Game Development course.</p>
+        <h3>Current Features</h3>
+        <ul>
+            <li>5 minigames</li>
+            <li>Gameplay that speeds up as you progress</li>
+            <li>Save your score (download ver only)</li>
+        </ul>
+        <h3>Planned Features</h3>
+        <ul>
+            <li>Over 50 minigames</li>
+            <li>Various modes that change up the game speed, lives, and even goals</li>
+            <li>Actual fun (maybe)</li>
+        </ul>
+        <p>It is still a work in progress but you can play what exists so far in your browser <a href="game.html">here</a> or download it <a href="download.html">here</a>.</p>
+        <br>
+        <img src="images/game/pong.png" alt="defend!">
+        <img src="images/game/catch.png" alt="catch!">
+        <img src="images/game/ship.png" alt="shoot!">
     </div>
-  </body>
+</div>
+</body>
 </html>
